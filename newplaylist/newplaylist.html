@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create New Playlist</title>
+  <link rel="stylesheet" href="newplaylist.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+  <div id="introSection" class="center-container">
+  <h1 class="playlist-title">Verse N Playlist</h1>
+  <p class="playlist-intro">
+    Create your own playlist by choosing songs that match your vibe. Click below to get started.
+  </p>
+  <button id="createBtn">
+    <i class='bx bxs-plus-square'></i> Create New
+  </button>
+  </div>
+
+  <div id="playlistModal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Create New Playlist</h3>
+      <input type="text" id="playlistName" placeholder="Enter playlist name" />
+      <div class="song-list"></div>
+      <div class="modal-actions">
+        <button id="saveBtn">Save Playlist</button>
+        <button id="cancelBtn">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="savedPlaylists"></div>
+
+  <script src="newplaylist.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+# Node / system
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+
+# Logs
+*.log
+
+# Build folders
+dist/
+build/
+
+# Media files (IGNORE HEAVY CONTENT)
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+*.mp3
+*.wav
+*.ogg
+*.flac
+*.aac
+
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.svg
+
+# Optional: keep folder but not files
+images/*
+audio/*
+video/*
+
+# But keep placeholder
+!images/.keep
+!audio/.keep
+!video/.keep

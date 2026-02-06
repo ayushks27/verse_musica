@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Verse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="explore.css">
+</head>
+<body>
+    <h1 class="main-heading">Explore Verse</h1>
+  
+    <div class="container">
+      <div class="player-img">
+          <img src="images/9415f990-809e-47dc-9114-630a033f46b1.jpg" class="active" id="cover">
+      </div>
+
+      <div class="player-progress" id="player-progress">
+          <div class="progress" id="progress"></div>
+          <div class="music-duration">
+              <span id="current-time">0:00</span>
+              <span id="duration">0:00</span>
+          </div>
+      </div>
+
+      <div class="player-controls">
+          <i class="fa-solid fa-backward" title="Previous" id="prev"></i>
+          <i class="fa-solid fa-play play-button" title="Play" id="play"></i>
+          <i class="fa-solid fa-forward" title="Next" id="next"></i>
+      </div>
+    
+    </div>
+
+    <div class="welcome-container">
+        <p><strong>Dear Music Lover,</strong></p>
+    
+        <p>Welcome to our family. </p>
+    
+        <p>We’re truly honored to have you here, where every note matters, and every listener is celebrated. Whether you came here chasing a nostalgic melody, the rhythm of your favorite genre, or simply looking for something new to fall in love with—this space was made for you.</p>
+    
+        <p>Music has the incredible power to bring us together, heal us, lift us, and give voice to what words sometimes can’t express. Here, you’ll find more than playlists and songs. You’ll discover stories, emotions, and connections—between artists and fans, beats and memories, and strangers who suddenly feel like kindred spirits.</p>
+    
+        <p>As you begin your journey, know this: you’re not just another user. You’re part of a growing, diverse, and passionate community that believes in the power of sound to move the world. We’re here to amplify your moments—big and small—and provide the soundtrack to your life, however you choose to live it.</p>
+    
+        <p>So put your headphones on, turn the volume up, and let your heart lead the way. This is just the beginning, and we can’t wait to grow with you—one song, one smile, one soulful moment at a time.</p>
+    
+        <p>With love,<br>
+        <strong>The V Team</strong></p>
+    </div>
+
+    <div class="year-scroll-wrapper">
+        <div class="year-scroll">
+          <div class="year-track">
+            <button class="year-btn" onclick="showSongs('y2016')">2016</button>
+            <button class="year-btn" onclick="showSongs('y2017')">2017</button>
+            <button class="year-btn" onclick="showSongs('y2018')">2018</button>
+            <button class="year-btn" onclick="showSongs('y2019')">2019</button>
+            <button class="year-btn" onclick="showSongs('y2020')">2020</button>
+            <button class="year-btn" onclick="showSongs('y2021')">2021</button>
+            <button class="year-btn" onclick="showSongs('y2022')">2022</button>
+            <button class="year-btn" onclick="showSongs('y2023')">2023</button>
+            <button class="year-btn" onclick="showSongs('y2024')">2024</button>
+            <button class="year-btn" onclick="showSongs('y2025')">2025</button>
+      
+            <!-- Duplicate once to enable smooth loop -->
+            <button class="year-btn" onclick="showSongs('y2016')">2016</button>
+            <button class="year-btn" onclick="showSongs('y2017')">2017</button>
+            <button class="year-btn" onclick="showSongs('y2018')">2018</button>
+            <button class="year-btn" onclick="showSongs('y2019')">2019</button>
+            <button class="year-btn" onclick="showSongs('y2020')">2020</button>
+            <button class="year-btn" onclick="showSongs('y2021')">2021</button>
+            <button class="year-btn" onclick="showSongs('y2022')">2022</button>
+            <button class="year-btn" onclick="showSongs('y2023')">2023</button>
+            <button class="year-btn" onclick="showSongs('y2024')">2024</button>
+            <button class="year-btn" onclick="showSongs('y2025')">2025</button>
+          </div>
+        </div>
+    </div>
+          
+    <div id="song-container" class="song-container"></div>
+    <script src="explore.js"></script>
+</body>
+</html>

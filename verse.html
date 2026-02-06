@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script
+    async
+    crossorigin="anonymous"
+    data-clerk-publishable-key="pk_test_c291Z2h0LWZveGhvdW5kLTQ3LmNsZXJrLmFjY291bnRzLmRldiQ"
+    src="https://sought-foxhound-47.clerk.accounts.dev/npm/@clerk/clerk-js@5/dist/clerk.browser.js"
+    type="text/javascript"
+    ></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="verse.css">
+    <title>Verse</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <button class="menu-btn" id="menu-close">
+                    <i class='bx bx-log-out-circle'></i>
+                </button>
+                <i class='bx bx-pulse'></i>
+                <a href="#">Verse</a>
+            </div>
+            <br>
+            <div class="menu">
+                <h5>Menu</h5>
+                <ul>
+                    <li>
+                        <i class='bx bxs-bolt-circle'></i>
+                        <a href="explore/explore.html">Explore</a>
+                    </li>
+                    <li>
+                        <i class='bx bxs-volume-full'></i>
+                        <a href="#">Genres</a>
+                    </li>
+                    <li>
+                        <i class='bx bxs-album'></i>
+                        <a href="album/album.html">Albums</a>
+                    </li>
+                    <li>
+                        <i class='bx bxs-microphone'></i>
+                        <a href="artist/artist.html">Artists</a>
+                    </li>
+                    <li>
+                        <i class='bx bxs-radio'></i>
+                        <a href="#">Podcasts</a>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <div class="menu">
+                <h5>Library</h5>
+                <ul>
+                    <li>
+                        <i class='bx bx-undo'></i>
+                        <a href="#">Recent</a>
+                    </li>
+                    <li>
+                        <i class='bx bxs-photo-album'></i>
+                        <a href="album/album.html">Albums</a>
+                    </li>
+                    <li>
+                        <i class='bx bxs-heart'></i>
+                        <a href="#">Favourites</a>
+                    </li>
+                    <li>
+                        <i class='bx bxs-folder'></i>
+                        <a href="#">Local</a>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <div class="menu">
+                <h5>Playlist</h5>
+                <ul>
+                    <li>
+                        <i class='bx bxs-plus-square'></i>
+                        <a href="newplaylist/newplaylist.html">Create New</a>
+                    </li>
+                    <li>
+                        <i class='bx bxs-caret-right-circle'></i>
+                        <a href="#">Best of 2023</a>
+                    </li>
+                    <li>
+                        <i class='bx bxs-caret-right-circle'></i>
+                        <a href="#">Best of 2022</a>
+                    </li>
+                    <li>
+                        <i class='bx bxs-caret-right-circle'></i>
+                        <a href="#">Kael Fischer</a>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <div class="playing">
+                <div class="top">
+                    <img src="images/Tom.jpg"
+                    <h4>Dolby<br>Atmos</h4>
+                </div>
+                <div class="bottom">
+                    <i class='bx bx-podcast'></i>
+                    <p>Playing On Device</p>
+                </div>
+            </div>
+
+
+        </aside>
+
+        <main>
+            <header>
+                <div class="nav-links">
+                    <button class="menu-btn" id="menu-open">
+                        <i class='bx bx-menu'></i>
+                    </button>
+                    <a href="music/music.html">Music</a>
+                    <a href="mini music player/index.html">Verse Mini</a>
+                </div>
+
+                <div class="search">
+                    <i class='bx bx-search'></i>
+                    <input type="text" id="searchInput" placeholder="Type here to search">
+                </div>
+
+            </header>
+
+            <div class="trending">
+                <div class="left">
+                    <h5>Trending New Song</h5>
+                    <div class="info">
+                        <h2>Treat You Better</h2>
+                        <h4>Shawn Mendes</h4>
+                        <h5>63 Million Plays</h5>
+                        <div class="buttons">
+                            <button id="audioControl">Listen Now</button>
+                            <i class='bx bxs-heart' id="heartIcon"></i>
+                            <audio id="audioPlayer" src="../audio/Shawn_Mendes_-_Treat_You_Better_ScaryBeatz.com.mp3"></audio>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/effWW.jpg">
+            </div>
+
+            <div class="playlist">
+                <div class="genres">
+                    <div class="header">
+                        <h5>Genres</h5>
+                        <a href="#">See all</a>
+                    </div>
+
+                    <div class="items">
+                        <div class="item">
+                            <p>Electro<br>Pop</p>
+                        </div>
+                        <div class="item">
+                            <p>Dance<br>Beat</p>
+                        </div>
+                        <div class="item">
+                            <p>Clubhouse<br>Remix</p>
+                        </div>
+                        <div class="item">
+                            <p>Hip Hop<br>Rap</p>
+                        </div>
+                        <div class="item">
+                            <p>Alternative<br>Indie</p>
+                        </div>
+                        <div class="item">
+                            <p>Classical<br>Period</p>
+                        </div>
+                        <div class="item">
+                            <p>Romantic<br>Love</p>
+                        </div>
+                        <div class="item">
+                            <p>Jazz<br>Buzzy</p>
+                        </div>
+                        <div class="item">
+                            <p>Instrumental<br>Echo</p>
+                        </div>
+                        <div class="item">
+                            <p><br>K-pop</p>
+                        </div>
+                    </div>
+
+                </div>
+          
+                <div class="music-list">
+                    <div class="header">
+                        <h5>Top Songs</h5>
+                        <a href="#">See all</a>
+                    </div>
+                    <div class="items">
+                        <div class="item" data-audio="audio/oca.mpeg" data-search="one call away charlie puth">
+                            <div class="info">
+                                <p>01</p>
+                                <img src="images/Shazamを使ってCharlie Puth Feat_ Selena GomezのWe Don't….jpg">
+                                <div class="details">
+                                    <h5>One Call Away</h5>
+                                    <p>Charlie Puth</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <p>03:45</p>
+                                <div class="icon play-button">
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                                <i class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+                    
+                        <div class="item" data-audio="audio/lmlyd-[AudioTrimmer.com].mp3" data-search="love me like you do ellie goulding">
+                            <div class="info">
+                                <p>02</p>
+                                <img src="images/Ellie Golding.png">
+                                <div class="details">
+                                    <h5>Love me like you do</h5>
+                                    <p>Ellie Golding</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <p>04:22</p>
+                                <div class="icon play-button">
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                                <i class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+
+                        <div class="item" data-audio="audio/american-studios_one-republic-counting-stars.mp3" data-search="counting stars one republic">
+                            <div class="info">
+                                <p>03</p>
+                                <img src="images/Screenshot 2024-11-30 010921.png">
+                                <div class="details">
+                                    <h5>Counting Stars</h5>
+                                    <p>One Republic</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <p>03:40</p>
+                                <div class="icon play-button">
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                                <i class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+
+                        <div class="item" data-audio="audio/american-studios_bruno-mars-just-the-way-you-are.mp3" data-search="just the way you are bruno mars">
+                            <div class="info">
+                                <p>04</p>
+                                <img src="images/Screenshot 2024-11-30 010848.png">
+                                <div class="details">
+                                    <h5>Just the way you are</h5>
+                                    <p>Bruno Mars</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <p>05:46</p>
+                                <div class="icon play-button">
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                                <i class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+                    
+                        <div class="item" data-audio="audio/american-studios_justin-bieber-love-yourself.mp3">
+                            <div class="info">
+                                <p>05</p>
+                                <img src="images/Screenshot 2024-11-30 010623.png">
+                                <div class="details">
+                                    <h5>Love Yourself</h5>
+                                    <p>Justin Bieber</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <p>04:40</p>
+                                <div class="icon play-button">
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                                <i class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+
+                        <div class="item" data-audio="audio/american-studios_dj-snake-ft-justin-bieber-let-me-love-you.mp3">
+                            <div class="info">
+                                <p>06</p>
+                                <img src="images/Screenshot 2024-11-30 010806.png">
+                                <div class="details">
+                                    <h5>Let Me Love You</h5>
+                                    <p>Justin Bieber</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <p>02:50</p>
+                                <div class="icon play-button">
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                                <i class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+
+                        <div class="item" data-audio="audio/Give-Me-Your-Forever-Ringtone-Download (1).mp3">
+                            <div class="info">
+                                <p>07</p>
+                                <img src="images/Screenshot 2024-11-30 011052.png">
+                                <div class="details">
+                                    <h5>Give me ur forever</h5>
+                                    <p>Zack Tabuldo</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <p>03:40</p>
+                                <div class="icon play-button">
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                                <i class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+
+                        <div class="item" data-audio="audio/[MP3DL.CC] Who Do You Love - Marc Lane (Lyrics)-320k.mp3">
+                            <div class="info">
+                                <p>08</p>
+                                <img src="images/Screenshot 2024-11-30 010448.png">
+                                <div class="details">
+                                    <h5>Who Do You Love</h5>
+                                    <p>Mark Lane</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <p>05:40</p>
+                                <div class="icon play-button">
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                                <i class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+
+                        <div class="item" data-audio="audio/closer.mp3">
+                            <div class="info">
+                                <p>09</p>
+                                <img src="images/The Chainsmokers - Closer (Lyric) ft_ Halsey….jpg">
+                                <div class="details">
+                                    <h5>Closer</h5>
+                                    <p>The Chainsmoker</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <p>04:35</p>
+                                <div class="icon play-button">
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                                <i class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+
+                        <div class="item" data-audio="audio/Alone-Alan-Walkar(PagalNew.Com.Se).mp3">
+                            <div class="info">
+                                <p>10</p>
+                                <img src="images/a766644a-d8e1-43c5-b40f-5fbe2b5a496d.jpg">
+                                <div class="details">
+                                    <h5>Alone</h5>
+                                    <p>Ana Max</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <p>02:20</p>
+                                <div class="icon play-button">
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                                <i class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <div class="right-section">
+            <div class="profile">
+                <i class='bx bxs-bell' id="notifyBtn"></i>
+                <i class='bx bxs-cog' id="settingsBtn"></i>
+
+                <div id="clerk-user"></div>
+
+            </div>
+
+            <!-- NOTIFICATIONS PANEL -->
+        <div id="notificationPanel"></div>
+         
+        <div id="historyPanel" class="dropdown-panel"></div>
+
+        <!-- SETTINGS PANEL -->
+        <div id="settingsPanel" class="dropdown-panel">
+            <h4>Settings</h4>
+
+            <div class="setting-row">
+                <span>Dark Mode</span>
+                <label class="switch">
+                    <input type="checkbox" id="darkToggle" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="setting-row">
+                <span>High Quality Audio</span>
+                <label class="switch">
+                    <input type="checkbox" id="hqToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="setting-row logout">
+                <button id="logoutBtn">Logout</button>
+            </div>
+        </div>
+
+
+            <div class="music-player">
+                <div class="top-section">
+                    <div class="header">
+                        <h5>V</h5>
+                        <i class='bx bxs-playlist'></i>
+                    </div>
+                    <div class="song-info">
+                        <img src="images/dgegr.jpg">
+                        <div class="description">
+                            <h3>A Sky Full of Stars</h3>
+                            <h5>Coldplay</h5>
+                            <br>
+                        </div>
+                        <div class="progress">
+                           <p>00:00</p>
+                            <div class="active-line"></div>
+                            <div class="deactive-line"></div>
+                            <p>00:00</p>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="player-actions">
+                    <div class="buttons">
+                        <i class='bx bx-repeat'></i>
+                        <i class='bx bx-first-page'></i>
+
+                        <div class="audio-player">
+                            <div class="controls">
+                                <div class="controls">
+                                    <i class="bx bx-play play-button" id="playPauseBTN" onclick="playPause()"></i>
+                                </div>
+
+                            </div>
+                    
+                            <audio id="audio">
+                                <source src="audio/Coldplay - A Sky Full of Stars (Lyrics) (320 kbps) ().mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+
+                        <i class='bx bx-last-page'></i>
+                        <i class='bx bx-transfer-alt'></i>
+                    </div>
+                    <div class="lyrics" onclick="toggleLyrics()">
+                        <div class="lyrics-header">
+                            <i class='bx bx-chevron-up'></i>
+                            <h5>LYRICS</h5>
+                        </div>
+                        <div class="lyrics-content">
+                        <p>
+                        Cause you're a sky <br>
+                        Cause you're a sky full of stars<br>
+                        I'm gonna give you my heart<br>
+                        Cause you're a sky <br>
+                        Cause you're a sky full of stars<br>
+                        Cause you light up the path<br>
+
+                        I don't care go on and tear me apart<br>
+                        I don't care if you do<br>
+                        Ooooh~<br>
+                        Cause in the sky <br>
+                        Cause in the sky full of stars<br>
+                        I think I saw you<br>
+
+                        Cause you're a sky <br>
+                        Cause you're a sky full of stars<br>
+                        I wanna die in your arm ( your arm )<br>
+                        Cause you can light up the more it gets dark<br>
+                        I'm gonna give you my heart<br>
+                        Oh~<br>
+ 
+                        I don't care go on and tear me apart<br>
+                        I don't care if you do<br>
+                        Ooooh~<br>
+                        Cause in the sky <br>
+                        Cause in the sky full of stars<br>
+                        I think I see you<br>
+                        I think I see you<br>
+
+                        Cause you're a sky<br>
+                        You're a sky full of stars<br>
+                        It's such a heavenly view<br>
+                        You're such a heavenly view
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="coming-soon-container">
+            <h2>Trending Songs</h2>
+            <div class="scrollable">
+
+              <div class="card">
+                <img src="images/sbs.jpg" alt="I Just Got A Lot On My Shoulders">
+                <button class="aud-btn" onclick="triggerSongPlay()">Play</button>
+                <p>Sweet but Psycho</p>
+                <p>Ana Max</p>
+                <audio id="uniqueAudioElement123" src="../audio/Ava Max - Sweet but Psycho mp3.mp3" preload="auto"></audio>
+              </div>
+
+              <div class="card">
+                <img src="images/m5.jpg" alt="The High Road">
+                <button class="aud-btn" onclick="toggleAudioPlay()">Play</button>
+                <p>Animals</p>
+                <p>Maroon 5</p>
+                <audio id="uniqueAudioElement124" src="../audio/Maroon 5 - Animals.mp3" preload="auto"></audio>
+              </div>
+
+              <div class="card" onclick="triggerSongPlay()">
+                <img src="images/Hadise-sweat_a.jpg" alt="Missionary">
+                <button class="aud-btn" onclick="toggleAudioPlay()">Play</button>
+                <p>My Body</p>
+                <p>Hadise</p>
+                <audio id="uniqueAudioElement125" src="../audio/My Body.mp3" preload="auto"></audio>
+              </div>
+
+              <div class="card" onclick="triggerSongPlay()">
+                <img src="images/tq.jpg" alt="Missionary">
+                <button class="aud-btn" onclick="toggleAudioPlay()">Play</button>
+                <p>Cruel Summer</p>
+                <p>Taylor Swift</p>
+                <audio id="uniqueAudioElement126" src="../audio/02 Cruel Summer.mp3" preload="auto"></audio>
+              </div>
+
+              <div class="card" onclick="triggerSongPlay()">
+                <img src="images/tm.jpg" alt="I Just Got A Lot On My Shoulders">
+                <button class="aud-btn" onclick="toggleAudioPlay()">Play</button>
+                <p>You Broke Me First</p>
+                <p>Tate McRae</p>
+                <audio id="uniqueAudioElement127" src="../audio/Tate McRae - you broke me first myfreemp3.vip .mp3" preload="auto"></audio>
+              </div>
+
+              <div class="card" onclick="triggerSongPlay()">
+                <img src="images/nh.jpg" alt="I Just Got A Lot On My Shoulders">
+                <button class="aud-btn" onclick="toggleAudioPlay()">Play</button>
+                <p>This Town</p>
+                <p>Niall Horan</p>
+                <audio id="uniqueAudioElement128" src="../audio/This-Town.mp3" preload="auto"></audio>
+              </div>
+
+              <div class="card" onclick="triggerSongPlay()">
+                <img src="images/lr.jpg" alt="I Just Got A Lot On My Shoulders">
+                <button class="aud-btn" onclick="toggleAudioPlay()">Play</button>
+                <p>I Am Re-born</p>
+                <audio id="uniqueAudioElement129" src="../audio/IVE 아이브 _'I AM_'.mp3" preload="auto"></audio>
+                <p>Ailee</p>
+              </div>
+
+              <div class="card" onclick="triggerSongPlay()">
+                <img src="images/One Direction's song, Night Changes is on the….jpg" alt="I Just Got A Lot On My Shoulders">
+                <button class="aud-btn" onclick="toggleAudioPlay()">Play</button>
+                <p>Night Changes</p>
+                <p>One Direction</p>
+                <audio id="uniqueAudioElement1210" src="../audio/One Direction - Night Changes.mp3" preload="auto"></audio>
+              </div>
+
+              <div class="card" onclick="triggerSongPlay()">
+                <img src="images/apt.webp" alt="Rosie">
+                <button class="aud-btn" onclick="toggleAudioPlay()">Play</button>
+                <p>Apt</p>
+                <p>Rose-Bruno Mars</p>
+                <audio id="uniqueAudioElement1211" src="../audio/Blackpink_Rose_Bruno_Mars_APT.mp3" preload="auto"></audio>
+              </div>
+
+            </div>
+          </div>  
+
+          <div class="podcast-container">
+            <h2>Podcasts</h2>
+            <div class="podcast-list">
+              <div class="podcast">
+                <img src="images/43898404-5543-4d5e-81c5-54fce28e614a.jpg" alt="Podcast 1">
+                <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/269-move-with-heart-96078222/episode/ep-91-evolving-with-age--244879165/?embed=true" frameborder="0"></iframe>
+                <p></p>
+              </div>
+              <div class="podcast">
+                <img src="images/lh.webp" alt="Podcast 3">
+                <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/867-lets-be-honest-with-kristi-120654123/episode/how-to-be-a-confident-queen-239871260/?embed=true" frameborder="0"></iframe>
+                <p></p>
+              </div>
+              <div class="podcast">
+                <img src="images/Date Yourself Instead on Apple Podcasts.jpg" alt="Podcast 3">
+                <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/867-date-yourself-instead-104083263/episode/youre-not-alone-there-are-people-241802510/?embed=true" frameborder="0"></iframe>
+                <p></p>
+              </div>
+              <div class="podcast">
+                <img src="images/Podcast_On purpose by Jay Shetty.jpg" alt="Podcast 3">
+                <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/1119-on-purpose-with-jay-shett-30589432/episode/can-you-be-friends-with-your-236147988/?embed=true" frameborder="0"></iframe>
+                <p></p>
+              </div>
+              <div class="podcast">
+                <img src="images/Common Chaos The Podcast on Apple Podcasts.jpg" alt="Podcast 3">
+                <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/269-common-chaos-the-podcast-92937809/episode/116-cc-highlight-how-to-219858047/?embed=true" frameborder="0"></iframe>
+                <p></p>
+              </div>
+              <div class="podcast">
+                <img src="images/9 Podcasts to Get You Pumped About the New Season of Serial.jpg" alt="Podcast 3">
+                <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/263-strangers-27931274/episode/two-men-and-a-baby-52013032/?embed=true" frameborder="0"></iframe>
+                <p></p>
+              </div>
+              <div class="podcast">
+                <img src="images/ct.webp" alt="Podcast 2">
+                <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/867-couple-things-with-shawn-a-52276893/episode/234-marriage-and-business-qa-233059303/?embed=true" frameborder="0"></iframe>
+                <p></p>
+              </div>
+              <div class="podcast">
+                <img src="images/Pretty, Not Smart with Louie and Yoatzi Castro on Apple Podcasts.jpg" alt="Podcast 3">
+                <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/1313-pretty-not-smart-with-lou-115358526/episode/double-the-trouble-with-the-murillo-243023788/?position=3&embed=true" frameborder="0"></iframe>
+                <p></p>
+              </div>
+              <div class="podcast">
+                <img src="images/THE BEST TIME IN YOUR CAREER TO GIVE A TEDx TALK.jpg" alt="Podcast 3">
+                <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/256-canadas-keynote-humorist-31010487/episode/tina-fey-198224510/?position=10&embed=true" frameborder="0"></iframe>
+                <p></p>
+              </div>
+              <div class="podcast">
+                <img src="images/The Entreprenista League.jpg" alt="Podcast 3">
+                <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/263-entreprenista-74309588/episode/316-my-10-marketing-secrets-241857241/?embed=true" frameborder="0"></iframe>
+                <p></p>
+              </div>
+              <div class="podcast">
+                <img src="images/Top 5 Inspirational And Empowering Podcasts.jpg" alt="Podcast 3">
+                <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/867-pretty-big-deal-with-ashle-29934287/episode/the-bellas-nikki-brie-bella-75465358/?embed=true" frameborder="0"></iframe>
+                <p></p>
+              </div>
+              <div class="podcast">
+                <img src="images/7e80e3cd-42f9-4ce9-a9ec-9a3ada0dc7bd.jpg" alt="Podcast 3">
+                <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/1139-call-her-daddy-29901383/episode/holiday-parties-high-school-reunions-242533684/?embed=true" frameborder="0"></iframe>
+                <p></p>
+              </div>
+              <div class="podcast">
+                <img src="images/3936c045-6a8a-45a6-a3ce-2db2255f2203.jpg" alt="Podcast 3">
+                <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/1119-chiquis-and-chill-88620832/episode/whats-in-a-dream-244106820/?embed=true" frameborder="0"></iframe>
+                <p></p>
+              </div>
+              <div class="podcast">
+                <img src="images/Passing Through.jpg" alt="Podcast 3">
+                <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/256-passing-through-31027715/episode/ep-22-passing-through-jealousy-106155568/?embed=true" frameborder="0"></iframe>
+                <p></p>
+              </div>
+              <div class="podcast">
+                <img src="images/bm.webp" alt="Podcast 3">
+                <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/269-boyfriend-material-with-ha-78396074/episode/the-best-advice-you-need-to-239876575/?embed=true" frameborder="0"></iframe>
+                <p></p>
+              </div>
+              <div class="podcast">
+                <img src="images/19 Parenting Podcasts You Shouldn't Miss Out On.jpg" alt="Podcast 3">
+                <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/256-awesome-with-alison-43065370/episode/ep-195-your-dreams-arent-dead-233293627/?embed=true" frameborder="0"></iframe>
+                <p></p>
+              </div>
+              <div class="podcast">
+                <img src="images/10 Women-Run Podcasts You Need to Be Listening To.jpg" alt="Podcast 3">
+                <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/274-lauren-conrad-asking-for-a-30771038/episode/photography-tips-for-in-front-of-46791191/?embed=true" frameborder="0"></iframe>
+                <p></p>
+              </div>
+              <div class="podcast">
+                <img src="images/mio.webp" alt="Podcast 3">
+                <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/269-made-it-out-126730500/episode/getting-older-with-cameron-esposito-244503948/?embed=true" frameborder="0"></iframe>
+                <p></p>
+              </div>
+              <div class="podcast">
+                <img src="images/cccc.webp" alt="Podcast 3">
+                <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/1119-because-the-boss-belongs-181469562/episode/introducing-because-the-boss-belongs-to-181471674/?embed=true" frameborder="0"></iframe>
+                <p></p>
+              </div>
+              <div class="podcast">
+                <img src="images/db.webp" alt="Podcast 3">
+                <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/1319-dumb-blonde-49112226/episode/ask-tell-confess-wtf-did-we-241153953/?position=118&embed=true" frameborder="0"></iframe>
+                <p></p>
+              </div>
+            </div>
+        </div>
+        
+        <div class="music-container">
+            <h1 class="app-title">Motivation</h1>
+            <div class="snippet-list">
+                <div class="snippet-item">
+                    <img src="images/hall of fame.jpg" alt="Snippet Image" class="snippet-image">
+                    <div class="button-container">
+                        <button class="play-btn" data-video="video/The Script - Hall of Fame (Lyric) ft. will.i.am - TheScriptVEVO (720p, h264, youtube).mp4">▶ Play</button>
+                    </div>
+                </div>
+                <div class="snippet-item">
+                    <img src="images/wwu.jpg" alt="Snippet Image" class="snippet-image">
+                    <div class="button-container">
+                        <button class="play-btn" data-video="video/SIA - Unstoppable  Lyryics video (tribute to Sia & Wonder Woman) - Anaxandridas100 (1080p, h264, youtube).mp4">▶ Play</button>
+                    </div>
+                </div>
+                <div class="snippet-item">
+                    <img src="images/Imagine Dragons Believer lyrics pain you made me a believer.jpg" alt="Snippet Image" class="snippet-image">
+                    <div class="button-container">
+                        <button class="play-btn" data-video="video/Imagine Dragons - Believer (Official Music Video) - ImagineDragonsVEVO (1080p, h264, youtube).mp4">▶ Play</button>
+                    </div>
+                </div>
+                <div class="snippet-item">
+                    <img src="images/I Aint Worried -  One Republic.jpg" alt="Snippet Image" class="snippet-image">
+                    <div class="button-container">
+                        <button class="play-btn" data-video="video/OneRepublic - I Ain’t Worried (From “Top Gun Maverick”) [Official Music Video] - OneRepublicVEVO (1080p, h264, youtube).mp4">▶ Play</button>
+                    </div>
+                </div>
+                <div class="snippet-item">
+                    <img src="images/fffhs.jpg" alt="Snippet Image" class="snippet-image">
+                    <div class="button-container">
+                        <button class="play-btn" data-video="video/Hailee Steinfeld - Love Myself (Official Video) - HaileeSteinfeldVEVO (1080p, h264, youtube).mp4">▶ Play</button>
+                    </div>
+                </div>
+                <div class="snippet-item">
+                    <img src="images/Wake Me Up.jpg" alt="Snippet Image" class="snippet-image">
+                    <div class="button-container">
+                        <button class="play-btn" data-video="video/Avicii - Wake Me Up (Official Video) (1).mp4">▶ Play</button>
+                    </div>
+                </div>
+                <div class="snippet-item">
+                    <img src="images/13d20800-de7e-43ef-ae20-3b4038dff134.jpg" alt="Snippet Image" class="snippet-image">
+                    <div class="button-container">
+                        <button class="play-btn" data-video="video/Don Diablo ft. KiFi - The Same Way  Official Music Video - Don Diablo (1080p, h264, youtube).mp4">▶ Play</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="heading2">Verseboard</div>
+        <div class="bcontainer">
+            <div class="box">
+                <video class="box-media" controls poster="images/1d93a57d-f5c3-4271-af8c-3f4ccd1bd2eb.jpg">
+                    <source src="video/4K Remastered - Sun Saathiya _ Varun Dhawan, Shraddha Kapoor _ ABCD 2 - Music Remastered ♪ (1080p, h264, youtube).mp4" type="video/mp4">
+                </video>
+                <div class="overlay">Song Of The Day</div>
+            </div> 
+
+            <div class="box rright">
+                <div class="image-gallery">
+                    <img src="images/srbtrytt.jpg" alt="Image 1" class="gallery-image">
+                </div>
+                <div class="text-box">Talk of the Town</div>
+            </div> 
+
+            <div class="box right">
+                <div class="image-container">
+                    <img src="images/titanic-leonardo-dicaprio-kate-winslet-hd-wallpaper-thumb.jpg" alt="Descriptive text" class="box-image">
+                    <p class="box-text">Today, I strongly want to introduce my mother's favourite songs, which is called “My Heart Will Go On”. This song is very popular at their age and it really contains too much things. “My Heart Will Go On”, also called the “Love Theme from Titanic”, is the main theme song to the 1997 blockbuster film Titanic. Its music was composed by James Horner, its lyrics were written by Will Jennings, and it was produced by James Horner and Walter; Celine Dion recorded and released it.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="g-container">
+            <div class="i-gallery">
+                <img src="images/6e4bb0a7-47f3-4570-b92b-96d6df3db60e.jpg" alt="Image 1">
+                <img src="images/dcscds.jpg" alt="Image 2">
+                <img src="images/swcw.jpg" alt="Image 3">
+                <img src="images/sdf.jpg" alt="Image 4">
+                <img src="images/Culpa Tuya poster.jpg" alt="Image 5">
+                <img src="images/fvdvda.jpg" alt="Image 6">
+                <img src="images/grrw4.jpg" alt="Image 7">
+                <img src="images/fa.jpg" alt="Image 8">
+                <img src="images/ed5d85a0-772f-43be-b728-6020f44cb599.jpg" alt="Image 9">
+                <img src="images/grwaascd.jpg" alt="Image 10">
+                <img src="images/d8c98547-448f-42ca-bf9d-698532b4a396.jpg" alt="Image 11">
+                <img src="images/Dolunay season 1.jpg" alt="Image 12">
+                <img src="images/We Live in Time Posters.jpg" alt="Image 13">
+                <img src="images/INTERSTELLAR (2014) poster by Jximedesigns.jpg" alt="Image 14">
+                <img src="images/set it up movie poster.jpg" alt="Image 15">
+            </div>
+        </div>
+
+        <script>
+            (function () {
+
+            const gallery = document.querySelector(".i-gallery");
+            if (!gallery) return;
+
+            const SIDE_SPACE = 40; // must match container padding
+
+            const images = gallery.querySelectorAll("img");
+
+            let loaded = 0;
+            images.forEach(img => {
+                if (img.complete) loaded++;
+                else img.addEventListener("load", onLoad);
+            });
+
+            if (loaded === images.length) start();
+
+            function onLoad() {
+                loaded++;
+                if (loaded === images.length) start();
+            }
+
+            function start() {
+
+                // create spacers INSIDE the moving track
+                const leftSpacer = document.createElement("div");
+                const rightSpacer = document.createElement("div");
+
+                leftSpacer.style.width = SIDE_SPACE + "px";
+                rightSpacer.style.width = SIDE_SPACE + "px";
+
+                gallery.prepend(leftSpacer);
+                gallery.append(rightSpacer);
+
+                let position = 0;
+                const speed = 0.75;
+
+                const loopWidth = gallery.scrollWidth;
+
+                // duplicate for infinite
+                gallery.innerHTML += gallery.innerHTML;
+
+                function animate() {
+                position += speed;
+
+                if (position >= loopWidth) position -= loopWidth;
+
+                gallery.style.transform = `translateX(-${position}px)`;
+                requestAnimationFrame(animate);
+                }
+
+                animate();
+            }
+
+            })();
+        </script>
+
+        
+        <div class="gallery-heading-container">
+            <h1 class="gallery-heading">Discover More</h1>
+        </div>
+        
+        <div class="gallery"> 
+            <div class="song" onclick="playSong('audio/Ariana Grande - One Last Time (Lyric Video).mp3')">
+                <img src="images/v.png" class="poster">
+                <div class="song-title">One Last Time</div>
+            </div>
+            <!-- <div class="song" onclick="playSong('audio/Make You Mine.mp3')">
+                <img src="images/mym.png" class="poster">
+                <div class="song-title">Make YOu Mine</div>
+            </div> -->
+            <div class="song" onclick="playSong('audio/Rewrite_The_Stars(256k).mp3')">
+                <img src="images/rs.png" class="poster">
+                <div class="song-title">Rewrite The Stars</div>
+            </div>
+            <div class="song" onclick="playSong('audio/Die With A Smile - PagalHits.mp3')">
+                <img src="images/ds.png" class="poster">
+                <div class="song-title">Die With A Smile</div>
+            </div>
+            <div class="song" onclick="playSong('audio/american-studios_ellie-goulding-beating-heart.mp3')">
+                <img src="images/go.avif"class="poster">
+                <div class="song-title">Beating Heart</div>
+            </div>
+            <div class="song" onclick="playSong('audio/ZAYN - Dusk Till Dawn (Lyrics) ft. Sia.mp3')">
+                <img src="images/dtd.png"class="poster">
+                <div class="song-title">Dusk Till Dawn</div>
+            </div>
+            <!-- <div class="song" onclick="playSong('audio/Christina Perri  A Thousand Years.mp3')">
+                <img src="images/ty.jpg"class="poster">
+                <div class="song-title">A Thousand Years</div>
+            </div> -->
+            <!-- <div class="song" onclick="playSong('audio/vazquez-sounds-adele-rolling-in-the-deep_charlie-puth-we-don-t-talk-anymore-ft-selena-gomez.mp3')">
+                <img src="images/csw.jpg"class="poster">
+                <div class="song-title">We Don't Talk Anymore</div>
+            </div> -->
+            <div class="song" onclick="playSong('audio/One Direction - What Makes You Beautiful (M.Zh.).mp3 (Mp3goo.com).mp3')">
+                <img src="images/1d.jpg"class="poster">
+                <div class="song-title">What Makes You Beautiful</div>
+            </div>
+            <div class="song" onclick="playSong('audio/256612-02976106-33b8-457c-9306-047fbba505d1.mp3')">
+                <img src="images/rolling stone february cover, dua lipa.jpg"class="poster">
+                <div class="song-title">Levitating</div>
+            </div>
+            <div class="song" onclick="playSong('audio/y2mate.com - Phillip Phillips - Gone, Gone, Gone_oozQ4yV__Vw.mp3')">
+                <img src="images/The Amazing Spiderman 2 Artwork.jpg"class="poster">
+                <div class="song-title">Gone,gone, gone</div>
+            </div>
+            <!-- <div class="song" onclick="playSong('audio/american-studios_bruno-mars-just-the-way-you-are.mp3')">
+                <img src="images/jtwyr.jpg"class="poster">
+                <div class="song-title">Just The Way You Are</div>
+            </div> -->
+    </div>
+
+    <div class="verse-container">
+        <div class="scrollable-container">
+            <div class="image-sequence">
+                <img src="images/TSWIFTSTUFF.jpg" alt="Image 1">
+                <img src="images/Selena gomez.jpg" alt="Image 2">
+                <img src="images/Tribute To Singer KK.jpg" alt="Image 3">
+                <img src="images/ldr.jpg" alt="Image 3">
+                <img src="images/I love you.jpg" alt="Image 3">
+                <img src="images/Dua Lipa.jpg" alt="Image 3">
+                <img src="images/ca258999-dfa5-40a6-8942-386d5b651a9e.jpg" alt="Image 3">
+                <img src="images/Sorry, I Couldn’t Hear Shawn Mendes Sing — I Was Too Busy Looking at His Biceps.jpg" alt="Image 3">
+                <img src="images/Sunidhi Chauhan in Ethereal for a concert in….jpg" alt="Image 3">
+                <img src="images/aaaa.jpg" alt="Image 3">
+                <img src="images/Gallery.jpg" alt="Image 3">
+                <img src="images/Nancy.jpg" alt="Image 3">
+                <img src="images/602e145f-b01a-485c-8e60-e68632465874.jpg" alt="Image 3">
+                <img src="images/d00f42b9-a5b5-4166-9e86-586cfad96320.jpg" alt="Image 3">
+                <img src="images/rs.jpg" alt="Image 3">
+                <img src="images/Ariana Grande.jpg" alt="Image 3">
+                <img src="images/DICAS DE ESTILO COM HARRY STYLES!.jpg" alt="Image 3">
+                <img src="images/75f874a4-d6f3-45db-bd51-3d74d99ac088.jpg" alt="Image 3">
+                <img src="images/34e65516-6fb8-4d5a-a726-7974b990f52a.jpg" alt="Image 3">
+                <img src="images/sss.jpg" alt="Image 3">
+                <img src="images/723280e6-cdfa-44c6-95d2-58d4022bec2f.jpg" alt="Image 3">
+                <img src="images/Hailee Steinfeld.jpg" alt="Image 3">
+                <img src="images/209c315b-32c4-47c3-9737-f828ee20446b.jpg" alt="Image 3">
+                <img src="images/6d65ab3a-41cb-4faf-9512-73a5a5829b70.jpg" alt="Image 3">
+                <img src="images/5d723fe7-c92e-41ac-bdb6-68bca79fe8d5.jpg" alt="Image 3">
+                <img src="images/hadise.jpg" alt="Image 3">
+            </div>
+            <div id="image-modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="zoomed-image">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function(){
+
+        const modal = document.getElementById("image-modal");
+        const modalImg = document.getElementById("zoomed-image");
+        const closeBtn = document.querySelector(".close");
+
+        if(!modal || !modalImg || !closeBtn) return;
+
+        /* CLICK IMAGE */
+        document.addEventListener("click", function(e){
+        const img = e.target.closest(".image-sequence img");
+        if(!img) return;
+
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+
+        requestAnimationFrame(()=>modal.classList.add("show"));
+        });
+
+        /* CLOSE */
+        function closeModal(){
+        modal.classList.remove("show");
+        setTimeout(()=> modal.style.display="none",200);
+        }
+
+        closeBtn.addEventListener("click", closeModal);
+        modal.addEventListener("click", e=>{ if(e.target===modal) closeModal(); });
+
+        document.addEventListener("keydown", e=>{
+        if(e.key==="Escape") closeModal();
+        });
+
+        })();
+    </script>
+
+    <h1 class="heading custom-heading">Underrated Artists</h1>
+    <div class="gallery-wrapper">
+        <div class="sc-container">
+        <div class="profile-card">
+            <h3>Shane Filan</h3>
+            <img src="images/Make You Feel My Love - Shane Filan _ Shane filan, Bride entrance songs, Entrance songs.jpg" alt="Jane Doe">
+            <button class="audio-control-btn" data-audio="audio/Westlife - Beautiful in White.mp3">▶ Play</button>
+        </div>
+      
+        <div class="profile-card">
+            <h3>Mark Amber</h3>
+            <img src="images/maa.webp" alt="John Smith">
+            <button class="audio-control-btn" data-audio="audio/Mark_Ambor_-_Good_To_Be_CeeNaija.com_.mp3">▶ Play</button> 
+        </div>
+    
+        <div class="profile-card">
+            <h3>Alex Warren</h3>
+            <img src="images/Alex Warren.jpg" alt="John Smith">
+            <button class="audio-control-btn" data-audio="audio/Alex Warren - Carry You Home (Lyrics).mp3">▶ Play</button>
+        </div>
+         
+        <div class="profile-card">
+            <h3>Zaeden</h3>
+            <img src="images/zz.jpg" alt="John Smith">
+            <button class="audio-control-btn" data-audio="audio/5 am - 5 am 320 Kbps.mp3">▶ Play</button>
+        </div>
+
+        <div class="profile-card">
+            <h3>Nikhil d' Souza</h3>
+            <img src="images/nds.jpg" alt="John Smith">
+            <button class="audio-control-btn" data-audio="audio/Mere Bina Crook 320 Kbps.mp3">▶ Play</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="vcontainer">
+        <div class="scr-container">
+        <h2 class="vcontainer-title">Decade Hits</h2>
+        <div class="track">
+            <img src="images/eddy.jpg" alt="Track Image" class="track-image">
+            <div class="track-info">
+                <h3 class="track-title">Zoey Deutch - Ed Sheeran - Perfect</h3>
+                <p class="time">8 years ago - #Romantic</p>
+                <div class="track-actions">
+                    <button class="playButton" data-audio="audio1">Play Now</button>
+                    <button>❤️ 237K</button>
+                    <button>💬 3,335</button>
+                    <button>🔗 Share</button>
+                    <button>More</button>
+                </div>
+            </div>
+            <audio id="audio1" src="audio/Perfect - Ed Sheeran(Pagalworld.skin) (1).mp3"></audio>
+        </div>
+    
+        <div class="track">
+            <img src="images/eb.jpg" alt="Track Image" class="track-image">
+            <div class="track-info">
+                <h3 class="track-title">Ellie Goulding - Burn</h3>
+                <p class="time">12 years ago - #Intense</p>
+                <div class="track-actions">
+                    <button class="playButton" data-audio="audio2">Play Now</button>
+                    <button>❤️ 16.5K</button>
+                    <button>💬 141</button>
+                    <button>🔗 Share</button>
+                    <button>More</button>
+                </div>
+            </div>
+            <audio id="audio2" src="audio/Ellie Goulding - Burn.mp3"></audio>
+        </div>
+
+        <div class="track">
+            <img src="images/dp.jpg" alt="Track Image" class="track-image">
+            <div class="track-info">
+                <h3 class="track-title">Luis Fonsi - Despacito</h3>
+                <p class="time">8 years ago - #Intense</p>
+                <div class="track-actions">
+                    <button class="playButton" data-audio="audio3">Play Now</button>
+                    <button>❤️ 16.5K</button>
+                    <button>💬 141</button>
+                    <button>🔗 Share</button>
+                    <button>More</button>
+                </div>
+            </div>
+            <audio id="audio3" src="audio/11086_Luis Fonsi ft. Daddy Yankee - Despacito SHOW2BABI.COM.mp3"></audio>
+        </div>
+
+        <div class="track">
+            <img src="images/ts.jpg" alt="Track Image" class="track-image">
+            <div class="track-info">
+                <h3 class="track-title">Taylor Swift - Daylight</h3>
+                <p class="time">7 years ago - #Intense</p>
+                <div class="track-actions">
+                    <button class="playButton" data-audio="audio4">Play Now</button>
+                    <button>❤️ 16.5K</button>
+                    <button>💬 141</button>
+                    <button>🔗 Share</button>
+                    <button>More</button>
+                </div>
+            </div>
+            <audio id="audio4" src="audio/Taylor_Swift_Daylight_Official_Audio_.mp3"></audio>
+        </div>
+    </div>
+</div>
+
+        <div class="artist-gallery">
+    <h2>Featured Artists</h2>
+
+    <div class="artist-carousel-wrapper">
+      <!-- ADD ID HERE -->
+      <div class="artist-carousel" id="artistCarousel">
+
+        <div class="artist-card">
+          <img src="images/g.jpg" alt="Artist 1">
+          <h3>Dua Lipa</h3>
+          <button class="follow-btn">Follow</button>
+        </div>
+
+        <div class="artist-card">
+          <img src="images/ed.jpg" alt="Artist 2">
+          <h3>Ed Sheeran</h3>
+          <button class="follow-btn">Follow</button>
+        </div>
+
+        <div class="artist-card">
+          <img src="images/ttss.jpg" alt="Artist 3">
+          <h3>Taylor Swift</h3>
+          <button class="follow-btn">Follow</button>
+        </div>
+
+        <div class="artist-card">
+          <img src="images/Mob Wife Brunette is This Summer's Biggest Hair Color Trend.jpg">
+          <h3>Sabrina</h3>
+          <button class="follow-btn">Follow</button>
+        </div>
+
+        <div class="artist-card">
+          <img src="images/SC-0948.jpg">
+          <h3>KK</h3>
+          <button class="follow-btn">Follow</button>
+        </div>
+
+        <div class="artist-card">
+          <img src="images/sk.jpg">
+          <h3>Shakira</h3>
+          <button class="follow-btn">Follow</button>
+        </div>
+
+        <div class="artist-card">
+          <img src="images/Ellie Goulding rocks leather playsuit on TOTP New Year's Day special.jpg">
+          <h3>Ellie Goulding</h3>
+          <button class="follow-btn">Follow</button>
+        </div>
+
+        <div class="artist-card">
+          <img src="images/c.jpg">
+          <h3>Coldplay</h3>
+          <button class="follow-btn">Follow</button>
+        </div>
+
+        <div class="artist-card">
+          <img src="images/c7d5adc1-a4c1-42a5-a474-0452ea713d3a.jpg">
+          <h3>Zayn Malik</h3>
+          <button class="follow-btn">Follow</button>
+        </div>
+
+        <div class="artist-card">
+          <img src="images/231229 Jihyo - 2023 MBC Entertainment Awards.jpg">
+          <h3>Jihyo</h3>
+          <button class="follow-btn">Follow</button>
+        </div>
+
+      </div>
+    </div>
+
+</div>
+
+    </div> 
+        
+        <div class="promotions-container">
+            <h2 class="promotions-heading">Promotions</h2><br>
+            <div class="promotions-layout">
+                <div class="promo-video-section">
+                    <video class="promo-video" controls>
+                        <source src="video/Dua Lipa - Illusion (Teaser Official Video) - PH Company (1080p, h264, youtube).mp4" type="video/mp4">
+                    </video><br>
+                    <p class="release-date">Release Date: April 11, 2024</p>
+                </div>
+                <div class="industry-news">
+                    <div class="news-container">
+                        <h3 class="section-heading">News</h3>
+                        <ul class="news-list">
+                            <li>Ed Sheeran announces new tour dates.</li>
+                            <li>Taylor Swift's latest album tops charts.</li>
+                            <li>Global Music Awards 2024 nominations revealed.</li>
+                            <li>Billie Eilish releases a new single.</li>
+                        </ul>
+                    </div>
+                    <div class="ads-container">
+                        <h3 class="section-heading">Upcoming Events</h3>
+                        <ul class="ads-list">
+                            <li>Upcoming Album: "Rhythms of Life" by John Mayer</li>
+                            <li>Exclusive Merchandise Sale: 50% Off This Week!</li>
+                            <li>Join the Spotify Premium Family Plan Today!</li>
+                            <li>Concert Tickets Available: Book Now!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="event-image-container">
+            <div class="slideshow-container">
+                <img src="images/dll.jpg" alt="Event 1" class="event-image active">
+                <img src="images/awe.jpg" alt="Event 2" class="event-image">
+                <img src="images/cpe.avif" alt="Event 3" class="event-image">
+              </div>
+            </div>
+        </div>
+        
+        <footer class="footer-container">
+            <p>&copy; 2025 Verse. All rights reserved.</p>
+        </footer>
+
+        <div id="toastContainer"></div>
+
+    </div>
+
+    <script src="verse.js"></script>
+    <script src="auth.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
