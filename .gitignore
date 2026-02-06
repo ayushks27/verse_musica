@@ -42,3 +42,6 @@ video/*
 !images/.keep
 !audio/.keep
 !video/.keep
+
+# Local Netlify folder
+.netlify
