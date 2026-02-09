@@ -2441,3 +2441,36 @@ html, body{
     }
 
 }
+
+/* Hide music player on phones & tablets */
+@media (max-width: 768px) {
+    .container .right-section .music-player {
+        display: none !important;
+    }
+}
+
+/* MOBILE LAYOUT FIX */
+@media (max-width: 768px) {
+
+    /* hide player */
+    .container .right-section .music-player {
+        display: none !important;
+    }
+
+    /* make layout vertical instead of side-by-side */
+    .container {
+        flex-direction: column;
+    }
+
+    /* allow content to fill screen */
+    .container .left-section,
+    .container .right-section {
+        width: 100% !important;
+    }
+
+    /* remove empty right spacing */
+    .container .right-section {
+        display: block;
+    }
+
+}
