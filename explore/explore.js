@@ -15,15 +15,15 @@ const music = new Audio();
 const songs = [
     {
         path: 'audio/lmlyd-[AudioTrimmer.com].mp3',
-        cover: 'images/9415f990-809e-47dc-9114-630a033f46b1.jpg',
+        cover: 'https://res.cloudinary.com/do3d7xlrt/image/upload/v1770728339/9415f990-809e-47dc-9114-630a033f46b1_dyyxm1.jpg',
     },
     {
         path: 'audio/tnwm.mp3',
-        cover: 'images/tnwm.jpg',
+        cover: 'https://res.cloudinary.com/do3d7xlrt/image/upload/v1770728363/tnwm_z0hjhk.jpg',
     },
     {
         path: 'audio/04.mp3',
-        cover: 'images/idr.jpg',
+        cover: 'https://res.cloudinary.com/do3d7xlrt/image/upload/v1770728347/idr_vl8omp.jpg',
     }
 ];
 

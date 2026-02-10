@@ -3,19 +3,19 @@ const songsList = [
         name: "Ed Sheeran",
         artist: "Perfect",
         src: "assets/Perfect - Ed Sheeran(Pagalworld.skin) (1).mp3",
-        cover: "assets/1.jpg"
+        cover: "https://res.cloudinary.com/do3d7xlrt/image/upload/v1770728399/1_iiokkk.jpg"
     },
     {
         name: "Heilee Steinfeld",
         artist: "Capital Letters",
         src: "assets/Hailee Steinfeld, BloodPop® - Capital Letters (Lyrics ⁄ Lyrics Video).mp3",
-        cover: "assets/2.jpg"
+        cover: "https://res.cloudinary.com/do3d7xlrt/image/upload/v1770728412/2_imjtez.jpg"
     },
     {
         name: "Public",
         artist: "Make You Mine",
         src: "assets/Make You Mine.mp3",
-        cover: "assets/3.jfif"
+        cover: "https://res.cloudinary.com/do3d7xlrt/image/upload/v1770728418/3_dnkjno.jpg"
     }
 ];
 

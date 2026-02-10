@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body{
-    background-image: url("assets/9.webp");
+    background-image: url("https://res.cloudinary.com/do3d7xlrt/image/upload/v1770728430/9_xgrrkm.webp");
     margin: 0;
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -77,7 +77,7 @@ h2 {
     position: absolute;
     top: 10px;
     left: 10px;
-    background: url("assets/1.jpg");
+    background: url("https://res.cloudinary.com/do3d7xlrt/image/upload/v1770728399/1_iiokkk.jpg");
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
