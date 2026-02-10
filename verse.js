@@ -485,7 +485,7 @@ document.querySelectorAll("video").forEach(v=>{
   const notifPanel   = document.getElementById("notificationPanel");
   const settingsPanel= document.getElementById("settingsPanel");
 
-  if(!notifBtn || !settingsBtn) return;
+  if(notifBtn && settingsBtn){
 
   /* NOTIFICATIONS */
   notifBtn.addEventListener("click",(e)=>{
@@ -528,7 +528,7 @@ document.querySelectorAll("video").forEach(v=>{
       settingsPanel.classList.remove("show");
     }
   });
-
+}
 
 
 document.getElementById("darkToggle")?.addEventListener("change",e=>{
@@ -636,6 +636,18 @@ document.addEventListener("play", e => {
 
 }, true);
 
+/* ================= EVENT SLIDESHOW ================= */
+
+const slides = document.querySelectorAll(".event-image");
+let slideIndex = 0;
+
+if(slides.length){
+  setInterval(()=>{
+    slides[slideIndex].classList.remove("active");
+    slideIndex = (slideIndex + 1) % slides.length;
+    slides[slideIndex].classList.add("active");
+  },3000);
+}
 
 });
 
