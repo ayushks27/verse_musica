@@ -14,15 +14,15 @@ const music = new Audio();
 
 const songs = [
     {
-        path: 'audio/lmlyd-[AudioTrimmer.com].mp3',
+        path: 'https://res.cloudinary.com/do3d7xlrt/video/upload/v1770719753/lmlyd-_AudioTrimmer.com_ovnnl0.mp3',
         cover: 'https://res.cloudinary.com/do3d7xlrt/image/upload/v1770728339/9415f990-809e-47dc-9114-630a033f46b1_dyyxm1.jpg',
     },
     {
-        path: 'audio/tnwm.mp3',
+        path: 'https://res.cloudinary.com/do3d7xlrt/video/upload/v1770729166/tnwm_io2ytj.mp3',
         cover: 'https://res.cloudinary.com/do3d7xlrt/image/upload/v1770728363/tnwm_z0hjhk.jpg',
     },
     {
-        path: 'audio/04.mp3',
+        path: 'https://res.cloudinary.com/do3d7xlrt/video/upload/v1770729159/04_jfi3di.mp3',
         cover: 'https://res.cloudinary.com/do3d7xlrt/image/upload/v1770728347/idr_vl8omp.jpg',
     }
 ];
@@ -105,7 +105,7 @@ loadMusic(songs[musicIndex]);
 window.onload = function () {
 const songsByYear = {
     y2016: [
-      { title: "2016 Hit", file: "audio/04.mp3" },
+      { title: "2016 Hit", file: "https://res.cloudinary.com/do3d7xlrt/video/upload/v1770729159/04_jfi3di.mp3" },
       { title: "Retro 2016", file: "song2.mp3" }
     ],
     y2017: [
