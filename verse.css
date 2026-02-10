@@ -2474,3 +2474,31 @@ html, body{
     }
 
 }
+
+/* ===== FIX PLAYER CLICK BLOCKING ===== */
+
+.container .right-section .music-player,
+.audio-player,
+#playPauseBTN,
+.player-actions{
+    position: relative;
+    z-index: 9999;
+}
+
+/* make glow background stay behind */
+body::before{
+    z-index: -1;
+}
+
+/* prevent decorative layers blocking clicks */
+img::after,
+.card::before,
+.card::after{
+    pointer-events: none !important;
+}
+
+/* ensure icons are clickable */
+.play-button,
+.audio-player i{
+    pointer-events: auto;
+}
